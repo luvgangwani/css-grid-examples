@@ -14,9 +14,11 @@
 
         #content {
             display: grid;
-            /* grid-template-columns: 30% 20% 50%; */ /* define the number of columns and the width of each column */
-            /* grid-template-columns: 1fr 1fr 1fr; */ /* fr - fractionals */
-            grid-template-columns: repeat(9, 1fr); /* repeat a value for n number of times */
+            grid-template-columns: repeat(3, 1fr); /* repeat a value for n number of times */
+            grid-template-rows: repeat(3, minmax(200px, auto)); /* specify the number of rows and height of each row */ /* the variations can be same as grid-template-columns */
+            column-gap: 10px; /* specify gaps between columns */
+            row-gap: 10px; /* specify gaps between rows */
+            /* gap: 10px; */ /* specify gaps between columns and rows */
             max-width: 960px;
             margin: 0 auto;
         }
@@ -38,7 +40,7 @@
 
         <div>1</div>
         <div>2</div>
-        <div>3</div>
+        <div>Occaecat ex amet nostrud excepteur. Non in occaecat commodo consequat nisi ipsum sint non consequat. Commodo ut irure duis ut. Minim dolor tempor sit ea aute proident dolore Lorem magna elit qui esse. Laboris irure elit non id consequat deserunt pariatur qui quis est nostrud eu.</div>
         <div>4</div>
         <div>5</div>
         <div>6</div>
